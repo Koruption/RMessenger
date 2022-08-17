@@ -3,7 +3,6 @@ use uuid::Uuid;
 #[allow(dead_code)]
 struct Receiver<'a, T> {
     id: String,
-    // cb: Box<dyn Fn(&'a Message<T>)>
     cb: Box<&'a dyn Fn(&'a T)>
 }
 
