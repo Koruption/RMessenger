@@ -1,6 +1,5 @@
 use uuid::Uuid;
 
-#[allow(dead_code)]
 struct Receiver<'a, T> {
     id: String,
     cb: Box<&'a dyn Fn(&'a T)>
@@ -16,7 +15,6 @@ impl <'a, T> Receiver<'a, T>
     }
 }
 
-#[allow(dead_code)]
 pub struct Sender<'a, K>
 {
     receivers: Vec<Receiver<'a, K>>,
