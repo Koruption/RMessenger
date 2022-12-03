@@ -1,5 +1,5 @@
 # 📬 RMessenger
-A simple `signal-esque` event system built in rust, primarily made as tool for me to familiarize myself with rust, but also because I like building event based systems. Support for async event handlers is on the way!
+A simple `signal-esque` event system built in rust primarily made as tool for me to familiarize myself with the lanaguage, but also because I like building event based systems!
 
 # Demo
 To demo the project first make sure you have Rust installed, then clone the repo and run `cargo build` to install some dependencies (a uuid tool, and the Rust async lib) then `cargo run` to start the project.
